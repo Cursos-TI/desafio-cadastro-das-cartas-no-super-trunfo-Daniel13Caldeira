@@ -43,11 +43,19 @@ int main()
     printf("\nDigite o numero de pontos turisticos da cidade: ");
     scanf("%d", &nPontosTuristicos2);
 
+    //calcula densidade populacional e PIB per capto
+    float densidadePopulacional1, pibPerCapto1, densidadePopulacional2, pibPerCapto2;
+    densidadePopulacional1 =  populacao1/area1;
+    densidadePopulacional2 =  populacao2/area2;
+    pibPerCapto1 = pib1/populacao1;
+    pibPerCapto2 = pib2/populacao2;
+
+
     //printa a carta 1
-    printf("\nCarta 1:\nEstado: %c\nCodigo: %s\nNome da Cidade: %s\nPopulacao: %d\nArea: %f km2\nPIB: %f bilhoes de reais\nNumero de Pontos Turisticos: %d",estado1,codigo1,nomeCidade1,populacao1,area1,pib1,nPontosTuristicos1);
+    printf("\nCarta 1:\nEstado: %c\nCodigo: %s\nNome da Cidade: %s\nPopulacao: %d\nArea: %.2f km2\nPIB: %.2f bilhoes de reais\nNumero de Pontos Turisticos: %d\nDensidade Populacional: %.2f\nPIB per Capita: %.2f",estado1,codigo1,nomeCidade1,populacao1,area1,pib1,nPontosTuristicos1,densidadePopulacional1,pibPerCapto1);
 
     //Printa a carta 2
-    printf("\n\nCarta 2:\nEstado: %c\nCodigo: %s\nNome da Cidade: %s\nPopulacao: %d\nArea: %f km2\nPIB: %f bilhoes de reais\nNumero de Pontos Turisticos: %d",estado2,codigo2,nomeCidade2,populacao2,area2,pib2,nPontosTuristicos2);
+    printf("\n\nCarta 2:\nEstado: %c\nCodigo: %s\nNome da Cidade: %s\nPopulacao: %d\nArea: %.2f km2\nPIB: %.2f bilhoes de reais\nNumero de Pontos Turisticos: %d\nDensidade Populacional: %.2f\nPIB per Capita: %.2f",estado2,codigo2,nomeCidade2,populacao2,area2,pib2,nPontosTuristicos2,densidadePopulacional2,pibPerCapto2);
 
     return 0;
 }
