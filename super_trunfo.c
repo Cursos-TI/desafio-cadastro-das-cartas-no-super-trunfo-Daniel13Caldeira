@@ -59,7 +59,7 @@ int main()
     printf("\n\nComparacao de cartas:\nEscolha o primeiro atributo que quer comparar:\n1 - Populacao\n2 - Area\n3 - PIB\n4 - Numero de pontos turisticos\n5 - Densidade demografica\n6 - PIB per capta\n7 - Super poder\n\n");
     int opcao, opcao2;
     float total1 = 0, total2 = 0;
-    char* menu;
+    const char* menu;
     scanf("%d",&opcao);
 
     printf("Escolha o segundo atributo que quer comparar:\n");
